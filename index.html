@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Tracker</h1>
+        <!-- Display the buttons to select the mood -->
+        <div class="mood-picker">
+            <button class="mood-btn" data-mood="sad"><span>😢</span></button>
+            <button class="mood-btn" data-mood="angry"><span>😠</span></button>
+            <button class="mood-btn" data-mood="neutral"><span>😐</span></button>
+            <button class="mood-btn" data-mood="happy"><span>😊</span></button>            
+            <button class="mood-btn" data-mood="excited"><span>😃</span></button>
+        </div>
+        <div class="mood-log">
+
+            <div id="view-navigation">
+                <!-- button to clear the localstorage -->
+                <button id="clear-storage-btn">Clear Mood Log</button> 
+            </div>
+            
+            <div id="calendar-header"></div> <!-- For displaying month and year -->
+            <!-- Previous and Next buttons for calendar -->
+            <div id="calendar-navigation">
+                <button id="prev-month-btn">Prev</button>
+                <button id="next-month-btn">Next</button>
+            </div>
+            
+            <div id="calendar-view"></div> <!-- For calendar view -->
+            
+            <h2>Mood Log</h2>
+            <!-- For selecting Day, Week, Month Views -->
+            <div id="view-navigation">
+                <button id="day-view-btn">Day</button>
+                <button id="week-view-btn">Week</button>
+                <button id="month-view-btn">Month</button>
+            </div>
+            <!-- Next and Prev buttons based on view -->
+            <div id="day-navigation" class="view-navigation">
+                <button id="prev-day-btn">Prev Day</button>
+                <button id="next-day-btn">Next Day</button>
+            </div>
+            <div id="week-navigation" class="view-navigation">
+                <button id="prev-week-btn">Prev Week</button>
+                <button id="next-week-btn">Next Week</button>
+            </div>
+            <div id="month-navigation" class="view-navigation">
+                <button id="prev-month-timeline-btn">Prev Month</button>
+                <button id="next-month-timeline-btn">Next Month</button>
+            </div>
+            <!-- Container to display mood timeline -->
+            <div id="mood-timeline"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
