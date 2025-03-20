@@ -10,6 +10,10 @@
 - **Clear Mood Log**: Users can clear all the logged moods from the local storage.
 - **Responsive Design**: The application is designed to be responsive and works well on different screen sizes.
 
+## Deployment
+
+The application is deployed at [Mood Tracker](https://moodtracker-two.vercel.app/).
+
 ## Screenshots
 
 ### Mood Selection
